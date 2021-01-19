@@ -19,7 +19,7 @@ import com.info.springdemo.service.CustomerService;
 @RequestMapping("/customer")
 public class CustomerController {
 	//need to inject the service
-	//test master
+	
 	@Autowired
 	private CustomerService customerService;
 	//kk
@@ -31,7 +31,7 @@ public class CustomerController {
 		theModel.addAttribute("customers", theCustomers);
 		
 		//add the customers to the model
-		
+		Ssytem.out.println();
 		return "list-customers";
 	}
 	
