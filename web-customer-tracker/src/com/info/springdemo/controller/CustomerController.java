@@ -22,7 +22,7 @@ public class CustomerController {
 	
 	@Autowired
 	private CustomerService customerService;
-
+	//kk
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
 		
@@ -31,7 +31,7 @@ public class CustomerController {
 		theModel.addAttribute("customers", theCustomers);
 		
 		//add the customers to the model
-		
+		Ssytem.out.println();
 		return "list-customers";
 	}
 	
@@ -56,11 +56,7 @@ public class CustomerController {
 		return "showFormForAdd";
 	}
 	
-	@GetMapping("/deleteCustomer")
-	public String deleteCustomer(@RequestParam("customerId")int customerId, Model theModel) {
-		customerService.deleteCustomer(customerId);
-		return "redirect:/customer/list";
-	}
+	//something added
 	
 	@GetMapping("/searchCustomer")
 	public String searchCustomer(@RequestParam("searchValue")String searchKeyword, Model theModel) {
@@ -70,6 +66,8 @@ public class CustomerController {
 		
 		return "list-customers";
 	}
+	
+	//new added
 	
 	
 	
