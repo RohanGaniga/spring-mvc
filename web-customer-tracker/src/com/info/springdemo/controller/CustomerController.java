@@ -22,7 +22,7 @@ public class CustomerController {
 	//test master
 	@Autowired
 	private CustomerService customerService;
-	
+	//kk
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
 		
