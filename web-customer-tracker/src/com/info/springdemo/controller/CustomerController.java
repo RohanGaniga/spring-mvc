@@ -29,7 +29,7 @@ public class CustomerController {
 		//get the customers from the dao
 		List<Customer> theCustomers = customerService.getCustomers();
 		theModel.addAttribute("customers", theCustomers);
-		
+		//This line was added by me
 		//add the customers to the model
 		Ssytem.out.println();
 		return "list-customers";
