@@ -31,7 +31,8 @@ public class CustomerController {
 		theModel.addAttribute("customers", theCustomers);
 		//This line was added by me
 		//add the customers to the model
-		Ssytem.out.println();
+		//Something was added
+		System.out.println();
 		return "list-customers";
 	}
 	
