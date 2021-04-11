@@ -19,7 +19,7 @@ import com.info.springdemo.service.CustomerService;
 @RequestMapping("/customer")
 public class CustomerController {
 	//need to inject the service
-	
+	//merge from brach to master
 	@Autowired
 	private CustomerService customerService;
 	//kk
