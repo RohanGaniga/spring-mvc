@@ -37,7 +37,7 @@ public class Customer {
 	public String getFirstName() {
 		return firstName;
 	}
-
+	//was added from remote
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
